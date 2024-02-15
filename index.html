@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumyo's Calculator</title>
+    <style>
+   
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .main{
+            background-color: aqua;
+            height: 100vh;        
+        }
+        .nav{
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 12vh;
+
+            font-size: 50px;
+            color: aliceblue;
+            text-transform: uppercase;
+            
+        }
+        .calc{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50%;
+        }
+        .calc div{
+            background-color: greenyellow;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            border: 1px solid black;
+        }
+        .calc .num1,.calc .num2,.calc .ans{
+            border-radius: 10px;
+            width: 180px;
+            height: 100px;
+
+            font-size: 30px;
+            
+        }
+        .calc .equal,.calc .sym{
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size:30px;
+           
+            
+        }
+        
+        .choices{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .choices button{
+            width: 50px;
+            height: 40px;
+            font-size:30px;
+            border: 1px solid  black ;
+            border-radius: 5px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="nav">Calculator</div>
+        <div class="calc">
+            <div class="num1">num1</div>
+            <div class="sym">+</div>
+            <div class="num2">num2</div>
+            <div class="equal">=</div>
+            <div class="ans">ans</div>
+           
+            
+            
+        </div>
+        <div class="choices">
+            <button>+</button>
+            <button>-</button>
+            <button>*</button>
+            <button>/</button>
+        </div>
+    </div>
+    
+</body>
+</html>
