@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+}
+.screen{
+    margin-top: 20px;
+    width: 100vw;
+    height: 40vh;
+
+
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.screen .text{
+    width: 90%;
+    border: 1px solid;
+    
+}
+
+.numpad{
+    
+    display: grid;
+    grid-template-areas:'clear erase mod plus'
+                        'one two three minus'
+                        'four five six mult' 
+                        'seven eight nine divi'
+                        'zero zero dot equal';
+    gap: 7px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    cursor: pointer;
+}
+.numpad div{
+    
+    border: 1px solid black;
+    height: 50px;
+    
+    border-radius: 10px ;
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+.one{grid-area: one;}
+.two{grid-area: two;}
+.three{grid-area: three;}
+.four{grid-area: four;}
+.five{grid-area: five;}
+.six{grid-area: six;}
+.seven{grid-area: seven;}
+.eight{grid-area: eight;}
+.nine{grid-area: nine;}
+.zero{grid-area: zero;}
+.dot{grid-area: dot;}
+.plus{grid-area: plus;}
+.minus{grid-area: minus;}
+.mult{grid-area: mult;}
+.divi{grid-area: divi;}
+.mod{grid-area: mod;}
+.erase{grid-area: erase;}
+.clear{grid-area: clear;}
+.equal{grid-area: equal;}
