@@ -44,38 +44,14 @@
     
 }
 .theme{
-    padding: 10px;
-    width: 0%;
-    display: flex;
-    justify-content: flex-end;
+    position: absolute;
+    top: 12vh;
+    right: 10px;
 }
-.theme button{
-    border: 1px solid black;
-    height: 25px;
-    background-color: rgb(243, 93, 70);
-    
-    border-radius: 7px ;
-    font-size: 12px;
-    font-weight: 700;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2px;
-    cursor: pointer;
-
-    box-shadow: 1.5px 1.5px 2px 1px rgb(122, 34, 34) ;
-}
-.theme button:hover{
-    transform: translateY(1px);
-    transition-duration: .25s;
-    transition-timing-function: ease-out;
-    text-shadow: .1px .1px  rgb(213, 130, 106);
-    filter: brightness(90%);
-}
 .screen{
     position: absolute;
-    top: 15vh;
+    top: 20vh;
     width: 100vw;
     height: 20vh;
 
@@ -108,14 +84,14 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom:10vh;
+    top:45vh;
 
     
     display: grid;
     grid-template-areas:'clean erase mod plus'
-                        'one two three minus'
+                        'seven eight nine minus'
                         'four five six mult' 
-                        'seven eight nine divi'
+                        'one two three divi'
                         'zero zero dot equal';
     gap: 7px;
     width: 300px;
@@ -160,10 +136,17 @@
 .equal{grid-area: equal; background-color: rgb(255, 162, 0);}
 
 
-.numpad button:hover{
-    transform: translateY(1.5px);
-    transition-duration: .25s;
-    transition-timing-function: ease-out;
+.numpad button:active{
+    transform: translateY(2px);
+    transition-duration: .15s;
+    transition-timing-function: ease-in-out;
     text-shadow: .25px .25px  rgb(255, 162, 0);
-    filter: brightness(85%);
+    filter: brightness(70%);
 }
+
+
+@media only screen and (max-width: 600px) {
+    .numpad{
+        top: 55vh;
+    }
+  }

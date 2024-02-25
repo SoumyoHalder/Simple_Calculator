@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Soumyo's Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="toggle.css" />
+  </head>
+  <body>
     <div class="container">
-        <nav class="navbar">
-            <div class="heading">Calculator</div>
-            <div class="theme"><button type="button" onclick="theme()">Theme</button></div>
+      <nav class="navbar">
+        <div class="heading">Calculator</div>
+      </nav>
+      <div class="theme">
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round" onclick="theme()"></span>
+        </label>
+      </div>
 
-        </nav>
-        <div class="screen">
-            <div class="text" >Enter</div>
-        </div>
-        <div class="numpad">
-            <button class="one" onclick="one()" type="button">1</button>
-            <button type="button" class="two" onclick="two()">2</button>
-            <button type="button" class="three" onclick="three()">3</button>
-            <button type="button" class="four" onclick="four()">4</button>
-            <button type="button" class="five" onclick="five()">5</button>
-            <button type="button" class="six" onclick="six()">6</button>
-            <button type="button" class="seven" onclick="seven()">7</button>
-            <button type="button" class="eight" onclick="eight()">8</button>
-            <button type="button" class="nine" onclick="nine()">9</button>
-            <button type="button" class="zero" onclick="zero()">0</button>
-            <button type="button" class="dot" onclick="dot()">.</button>
-            <button type="button" class="plus" onclick="plus()">+</button>
-            <button type="button" class="minus" onclick="minus()">-</button>
-            <button type="button" class="mult" onclick="mult()">*</button>
-            <button type="button" class="divi" onclick="divi()">/</button>
-            <button type="button" class="mod" onclick="mod()">%</button>
-            <button type="button" class="erase" onclick="erase()"><</button>
-            <button type="button" class="clean" onclick="clean()">C</button>
-            <button type="button" class="equal" onclick="equal()">=</button>
-        
-         
-    
-        
-        </div>
+      <div class="screen">
+        <div class="text">Enter</div>
+      </div>
+      <div class="numpad">
+        <button class="one" onclick="one()" type="button">1</button>
+        <button type="button" class="two" onclick="two()">2</button>
+        <button type="button" class="three" onclick="three()">3</button>
+        <button type="button" class="four" onclick="four()">4</button>
+        <button type="button" class="five" onclick="five()">5</button>
+        <button type="button" class="six" onclick="six()">6</button>
+        <button type="button" class="seven" onclick="seven()">7</button>
+        <button type="button" class="eight" onclick="eight()">8</button>
+        <button type="button" class="nine" onclick="nine()">9</button>
+        <button type="button" class="zero" onclick="zero()">0</button>
+        <button type="button" class="dot" onclick="dot()">.</button>
+        <button type="button" class="plus" onclick="plus()">+</button>
+        <button type="button" class="minus" onclick="minus()">-</button>
+        <button type="button" class="mult" onclick="mult()">*</button>
+        <button type="button" class="divi" onclick="divi()">/</button>
+        <button type="button" class="mod" onclick="mod()">%</button>
+        <button type="button" class="erase" onclick="erase()"><</button>
+        <button type="button" class="clean" onclick="clean()">C</button>
+        <button type="button" class="equal" onclick="equal()">=</button>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -65,7 +65,11 @@ function mod(){
     document.querySelector(".text").innerHTML=str;
 }
 function equal(){
-    str=eval(str);
+    try {
+        str=eval(str);
+    } catch (e) {
+        alert(`Invalid Input !!! \n${e.name}`);
+    }
     document.querySelector(".text").innerHTML=str;
 }
 function clean(){
