@@ -67,7 +67,6 @@ function mod(){
 function equal(){
     str=eval(str);
     document.querySelector(".text").innerHTML=str;
-    str="";
 }
 function clean(){
     str="";
@@ -76,4 +75,11 @@ function clean(){
 function erase(){
     str=str.slice(0,str.length-1);
     document.querySelector(".text").innerHTML=str;
+}
+
+function theme(){
+    document.querySelector(".container").classList.toggle("theme_change");
+
+    document.querySelector(".text").classList.toggle(".text_color");
+
 }
